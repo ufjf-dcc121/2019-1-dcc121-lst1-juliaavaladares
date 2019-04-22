@@ -7,9 +7,14 @@
     <title>Questao 13</title>
 </head>
 <body>
-    <div id = "interativo"> Clique-me! </div>
-    <script>
-        
+    <button id = "interativo"> Clique-me! </button>
+     <script>
+        var interativo = "Funcionou!";
+        document.getElementById("interativo").addEventListener("click", modifyText);
+
+        function modifyText(){
+            document.getElementById("interativo").innerHTML = interativo;
+        }
     </script>
 </body>
 </html>
