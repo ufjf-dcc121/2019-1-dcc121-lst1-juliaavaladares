@@ -12,7 +12,7 @@
         <div id = "produto"></div>
         <div id = "soma"></div>
 
-        <button id = "calcular "> Calcular! </button>
+        <button id = "calcular"> Calcular! </button>
 
         <script>
             var x = 7, y = 5, produto = x*y, soma = x+y, botao;
@@ -20,6 +20,14 @@
             document.getElementById("y");
             document.getElementById("produto");
             document.getElementById("soma");
+
+            document.getElementById("calcular").addEventListener("click",calculadora);
+            function calculadora() {
+                document.getElementById("produto").innerText = "O produto de "+ x + " e " + y + " é " + produto;
+                document.getElementById("soma").innerText = "A soma de "+ x + " e " + y + " é " + soma;
+            }
+
+
 
         
 
