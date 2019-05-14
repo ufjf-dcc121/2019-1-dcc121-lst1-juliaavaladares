@@ -15,6 +15,7 @@
             em Confeitaria Básica; <span id = "Cober" contenteditable="true"></span> em Coberturas e <span id = "BroaBolos" contenteditable="true"></span> em Broas e Bolos.
         </p>
 
+        
        <p id = "resultado"></p>
        <p id = "melhorias"></p>
        <button id = "avaliar">Avaliar</button>
@@ -49,7 +50,7 @@
                var n_bolos = parseInt(document.getElementById("BarBolos").value);
 
                media = (n_bolos + n_coberturas + n_confeitaria)/3;
-               
+
                 if(media >= 70)
                     resultado.innerText = "Parabéns Fulano! Voce esta aprovado com media "+media+" !";
                 else
