@@ -10,16 +10,35 @@
     <main>
         <h1> Resultado Avaliação </h1>
         <p> 
-            Olá <span id = "nome"> </span>, você está matriculado há <span id = "tempo"> </span> anos no curso de Confeitaria e 
-            as notas das suas disciplinas são: <span id = "ConfBasica"> </span> 
-            em Confeitaria Básica; <span id = "Cober"></span> em Coberturas e <span id = "BroaBolos"></span> em Broas e Bolos.
+            Olá <span id = "nome" contenteditable="true"> </span>, você está matriculado há <span id = "tempo" contenteditable="true"> </span> anos no curso de Confeitaria e 
+            as notas das suas disciplinas são: <span id = "ConfBasica" contenteditable="true"> </span> 
+            em Confeitaria Básica; <span id = "Cober" contenteditable="true"></span> em Coberturas e <span id = "BroaBolos" contenteditable="true"></span> em Broas e Bolos.
         </p>
 
        <p id = "resultado"></p>
        <p id = "melhorias"></p>
        <button id = "avaliar">Avaliar</button>
        <button id = "limpar">Limpar</button>
-        
+
+       <script>
+           var nome, anos, confeitaria, coberturas, bolos, botaoAvaliar, botaoLimpar, resultado, melhorias, media;
+
+           nome = document.getElementById("nome");
+           anos = document.getElementById("tempo");
+           confeitaria = document.getElementById("ConfBasica");
+           coberturas = document.getElementById("Cober");
+           bolos = document.getElementById("BroaBolos");
+
+           botaoAvaliar = document.getElementById("avaliar");
+           botaoLimpar = document.getElementById("limpar");
+
+           resultado = document.getElementById("resultado");
+           melhorias = document.getElementById("melhorias");
+
+
+       
+       </script>
+
     </main>
     
 </body>
