@@ -49,10 +49,20 @@
                var n_bolos = parseInt(document.getElementById("BarBolos").value);
 
                media = (n_bolos + n_coberturas + n_confeitaria)/3;
+               
                 if(media >= 70)
                     resultado.innerText = "Parabéns Fulano! Voce esta aprovado com media "+media+" !";
                 else
                 resultado.innerText = "Você esta reprovado com media "+media+" !";
+
+                if (n_confeitaria < 60)
+                melhorias.innerText = "Fulano, considere estudar mais Confeitaria Básica!";
+
+                if (n_coberturas < 60)
+                melhorias.innerText = "Fulano, considere estudar mais Coberturas!";
+                
+                if (n_bolos < 60)
+                melhorias.innerText = "Fulano, considere estudar mais Broas e Bolos!";
 
            }
 
