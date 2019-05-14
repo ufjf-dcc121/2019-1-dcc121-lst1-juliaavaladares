@@ -35,6 +35,13 @@
            resultado = document.getElementById("resultado");
            melhorias = document.getElementById("melhorias");
 
+           botaoLimpar.addEventListener("click", limparClick);
+
+           function limparClick(){
+                resultado.innerText = "";
+                melhorias.innerText = "";
+           }
+
 
        
        </script>
