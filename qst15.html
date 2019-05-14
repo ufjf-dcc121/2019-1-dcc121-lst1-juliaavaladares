@@ -36,10 +36,24 @@
            melhorias = document.getElementById("melhorias");
 
            botaoLimpar.addEventListener("click", limparClick);
+           botaoAvaliar.addEventListener("click", avaliarClick);
 
            function limparClick(){
                 resultado.innerText = "";
                 melhorias.innerText = "";
+           }
+
+           function avaliarClick(){
+               var n_confeitaria = parseInt(document.getElementById("ConfBasica").value);
+               var n_coberturas = parseInt(document.getElementById("Cober").value);
+               var n_bolos = parseInt(document.getElementById("BarBolos").value);
+
+               media = (n_bolos + n_coberturas + n_confeitaria)/3;
+                if(media >= 70)
+                    resultado.innerText = "Parabéns Fulano! Voce esta aprovado com media "+media+" !";
+                else
+                resultado.innerText = "Você esta reprovado com media "+media+" !";
+
            }
 
 
